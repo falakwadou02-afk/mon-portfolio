@@ -1,0 +1,240 @@
+/* Reset simple */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+/* Navbar */
+.navbar {
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(110, 96, 62);
+}
+
+/* Logo */
+.logo a {
+  color:black;
+  font-size: 40px;
+  font-weight: 700;
+  text-decoration: none;
+  
+}
+
+/* Menu */
+.nav-menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+/* Liens */
+.nav-menu li a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+ }
+/* Hover lien */
+.nav-menu li a:hover {
+  color: #0d6efd; 
+}
+#hero {
+  width: 100%;
+  position: relative;
+  background-image: url(image/crea-bachelor-developpement-web-applications-couverture-1184x680.webp);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  background-color: #111;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+}
+.hero-content h1 {
+  font-size: 60px ;
+  margin-bottom: 20px;
+  font-weight: 700;
+  
+}
+.hero-content p {
+  font-size: 25px ;
+  font-weight: 300;
+}
+
+/* about */
+#about {
+  padding: 10px 0;
+  background-color: #f8f9fa;
+ 
+}
+.section-title {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.section-line {
+  display: block;
+  width: 60px;
+  height: 3px;
+  
+  margin: 0 auto 40px;
+}
+.about-container {
+  width: 80%;
+  margin: auto ;
+  display: flex;
+  gap: 40px;
+  padding: 100px;
+  box-shadow: 0 0 45px rgba(0, 0, 0, 0.1);
+  max-width: 2500px;
+  background-color: #ffffff;
+  flex-direction: column;
+}
+.about-top {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+/* colonne gauche */
+.about-left {
+  width: 35%;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+.about-left img {
+  width: 100%;
+  border-radius: 5px;
+  height: auto;
+  max-width: 300px;
+  
+}
+.about-info {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 5px;
+  margin-top: 20px;
+  
+}
+.about-info p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  padding: 5px 0;
+  border-bottom: 0.25px solid black;
+  }
+ 
+  
+/* colonne droite */
+.about-right {
+  width: 65%;
+}
+  
+
+.about-right h2 {
+  font-size: 40px;
+}
+.about-right .line {
+display: block;
+width: 60px;
+height: 3px;
+background-color: #0078ff;
+margin: 10px 0 20px;
+
+}
+.about-right p {
+  font-size: 20px;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+/* SECTION SKILLS */
+
+.skills {
+  margin-top: 50px;
+}
+
+/* TITRE */
+.skills h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+.skills .line {
+  display: block;
+  width: 60px;
+ height: 3px;
+  margin-bottom: 30px;
+}
+
+/* SKILL */
+.skill {
+  margin-bottom: 10px;
+}
+
+/* TEXTE au dessus des skills*/
+.skill-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+/* Barre de progression */
+.progress {
+  background-color: #e9ecef;
+  height: 15px;
+  border-radius: 5px;
+overflow: hidden;
+ 
+}
+
+/* BARRE ANIMÉE */
+.progress-bar {
+  height: 100%;
+  background-color: grey;
+  border-radius: 5px;
+
+  
+}
+
+/* ANIMATION des skills*/
+.skill:hover .progress-bar.html {
+  width: 85%;
+  background-color: blue;
+}
+
+.skill:hover .progress-bar.css {
+  width: 80%;
+  background-color: red;
+}
+
+.skill:hover .progress-bar.js {
+  width: 60%;
+  background-color: yellow;
+}
+
+
+
